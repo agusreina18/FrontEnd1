@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Kanit:wght@500&family=Yellowtail&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 3px;
+
+}
+
+.main-container {
+    display:flex;
+    width: 1300px;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+}
+p{
+    color: black;
+
+}
+
+h1{ 
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/*ASIDE*/
+aside {
+    background-color: #222c4d; 
+    width: 50%;   
+}
+aside *{
+    color: white;
+}
+
+aside h3{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+aside section h3:first-child{
+    border-bottom: 2px solid white;
+}
+
+#profile-pic img{
+    border-radius:50% ;
+}
+
+/*MAIN*/
+
+main {
+
+}
+.hero {
+    background-color: #A49BF2 ;
+    color: black;
+    box-shadow: 3px 3px 50px 3px inset #A49BF2;
+}
+
+.hero h2{
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid white;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: #B681DB;
+}
+
+.careers dt span{
+    font-family: 'Yellowtail', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.careers {
+    text-align: center;
+    background-color: #F5B5ED;
+}
+
+main section> h2 {
+    background-color: white;
+    letter-spacing: 5px;
+    border-bottom: 2px solid black
+
+}
+
+main li span {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+main ul, ol {
+    background-color:#EADCDC;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+footer {
+    text-align: center;
+    background-color: #222c4d;
+    padding-top: 1%;
+    padding-bottom: 0.3%;
+}
+
+footer p {
+    color: white;
+}
