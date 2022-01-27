@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<!--El scroll-behavior es para detallar como quiero que se comporte el
+scroll desde el html. Se suele configurar en el css tamb.-->
+
+<head>
+    <!--Conversacion entre el navegador y yo..aqui solo voy a ver el title en la pestaña de la pag-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Prueba</title>
+    <!--Lo unico que va a ver el usuario es esta etiqueta que se vera reflejada en el nombre de la pestaña-->
+    <link rel="stylesheet" href="">
+    <!-- inserto ruta a mi archivo css y misma etiqueta para otros enlaces (fuentes por ej)-->
+</head>
+
+<body>
+    <!--Todo lo que pongo en el body lo va a ver el usuario menos los comentarios-->
+    <!--Shift+alt+f: para dar formato al documento-->
+    <header>
+        <!--Dentro del header suele estar el título, logo, la barra de navegación y otros elementos especificos, ej, en ecomerce el inicio de sesion, carrito,etc
+        El menu de navegacion debe ir siempre dentro del nav. Solo puede haber solo un nav por documento (ojo)-->
+        <h1>Titulo Principal</h1>
+        <!--Titulo principal. solo uno por documento y cambia el formato si se pone en el header o en el main.-->
+
+        <!--Imagenes: ej Logo en header-->
+        <a href="index.html"><img src="img/nombrearchivo.jpg" alt="Logo"></a>
+        <!--en src va la ruta de la imagen y en alt el texto alternativo
+        por si no se carga la imagen (obligatorio). En este caso la imagen la 
+        anidamos dentro de un "a" porque queremos hacer del logo una imagen clickeable-->
+        <nav>
+            <!--Para menu de navegacion-->
+            <ul>
+                <!--Lista desordenada para los elementos del menu-->
+                <li>
+                    <!--Cada li debe llevar la ruta de nevegación que 
+                        nos llevará a la seccion correspondiente para eso usamos "a"-->
+                    <!--Ruta Absoluta: Sitio externo-->
+                    <a href="https://www.google.com/" target="_blank">Google</a>
+                    <!--href es
+                        para la ruta, target para abrir el sitio en una pestaña 
+                        nueva. Solo se usa para sitios externos-->
+                </li>
+                <li>
+                    <!--Ruta Relativa: para archivos dentro de mi proyecto, yo se donde está
+                    el archivo en relación a mi index-->
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <!--Anclas: para llevar a una seccion dentro de mi documento. Para que vaya a 
+                    la seccion (section) que deseo,a la misma la debo marcar con 
+                    un id:"palabraclave"(en este caso "nosotros")-->
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <!--No lleva cierre. Sirve para agregar lineas de separacion-->
+    </header>
+    <main>
+        <!--Todo el contenido principal, aqui se debe separar en secciones-->
+        <section>
+            <h2>Seccion 1</h2>
+            <article></article>
+            <!--Este puede estar o no. Se refiere a una seccion independiente dentro de una seccion, ej, 
+                noticia en seccion de policiales. Puede cambiar de un dia al otro. Los article pueden tener 
+                su propio h1, es una estructura un poco mas complicada-->
+            <p>Lorem ipsum dolor sit, <span>amet</span> <i>consectetur</i> <em>adipisicing</em>
+                elit. <br> <b>Fugiat</b> <strong>cupiditate</strong> repellendus
+                <!--A simple vista parece que 
+                    i y em, como b y strong generan el mismo efecto, pero lo de i y b son a nivel estetico, 
+                    mientras que em y strong son  anivel semantico, siendo estos más importantes para el 
+                    navegador. br me genera un salto de linea dentro del parrafo sin romper el parrafo, 
+                    no se usa casi. Todos estos fueron sumplatados con el uso de css--> aliquam veritatis dolorum
+                itaque voluptate voluptatibus ad excepturi omnis!</p>
+            <!--Para parrafos de texto-->
+            <span></span>
+            <!--Esta etiqueta cuando quiero aplicar un det estilo de css a ese elemento de texto dentro de un parrafo, ej, quiero cambiar el color
+            de una palabra o frase dentro del parrafo, ahi lo pongo entre span y no me modifica el parrafo-->
+            <div></div>
+            <!--Etiqueta comodin, para mover elementos en bloque o para aplicar 
+                estilos en todo lo que este dentro, ej, si quiero hacer una card. 
+                Se asignan con un id (esto se usa principalmente en js) o class(principalmente usado en css)-->
+        </section>
+        <section>
+            <h2>Seccion 2</h2>
+            <!--ETIQUETAS PARA LISTAS-->
+            <ul>
+                <!--Para listas desordenadas-->
+                <li>elemento 1
+                    <ul>
+                        <li>elemento a</li>
+                        <li>elemento b</li>
+                    </ul>
+                </li>
+                <li>element0 2</li>
+                <li>elemento 3</li>
+            </ul>
+
+            <ol type="A" start="A">
+                <!-- type me dice tipo de ordenador, num, letra
+                 etc, start me dice desde donde comienza-->
+                <!--Para listas ordenadas-->
+                <li>elemento 1</li>
+                <li>element0 2</li>
+                <li>elemento 3</li>
+            </ol>
+        </section>
+        <aside></aside>
+        <!--Esta etiqueta se usa para algo secundario, ej, los links que van a un costado. Ya no se usa tanto excepto para blogs-->
+    </main>
+    <footer>
+        <!--Pie de pag del sitio, se repiten enlaces importantes, etc-->
+        <p align="center">Derechos Reservados</p>
+    </footer>
+    <script src=""></script>
+    <!--Al final del body se pone esta etiqueta para el archivo js-->
+</body>
+
+</html>
