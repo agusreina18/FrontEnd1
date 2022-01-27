@@ -1,0 +1,40 @@
+WIREFRAME : FIGMA (PLATAFORMA DE DISEÑO)
+IDE: VSC-SUBLIME-ATOM-BRACKETS
+EXTENSIONES VSC: 
+-SNIPPET HTML: sugiere el autocompletado//atajo: con el "!" ya me pone a estructura básica de HTML.
+-LIVESERVER: No funciona sobre html suelto, debe estar en una carpeta de proy raiz.
+Tamb me actualiza automaticamente los cambios sin necesidad de refrescar el navegador (simula la creacion de un servidor). 
+El Go Live se activa solo una vez cada vez que abro el proyecto.
+-LIVESHARE: Trabajar colaborativamente
+CHECKEAR EN W3C (https://www.w3.org/) PARA:
+- ACCESIBILIDAD (https://www.w3.org/WAI/)
+- VALIDATOR (https://validator.w3.org/) PARA VALIDAD WEB OFICIALMENTE EN CUANTO A CODIGO.
+- DUDAS EN GRAL..ETIQUETAS POR EJ (https://www.w3.org/2009/cheatsheet/)
+
+CAN I USE PARA VER QUE NAVEGADORES Y VERSIONES SOPORTAN LAS HERRAMIENTAS USADAS (EJ. FLEX):
+- https://caniuse.com/
+
+Partes princ:
+header-body-footer...header y footer se mantienen en todos los archivos html..el body va variando.
+
+Comentarios en HTML:
+<!--TEXTO A COMENTAR-->
+
+root - Carpeta raíz de nuestro proyecto
+    css - Carpeta con las hojas de estilos .css)
+        style.css (es el nombre más utilizado para nuestros archivos css)
+    img - Carpeta de imágenes
+        (acá van todos los archivos de imagen (jpg, gif, png) que utilicemos en nuestro proyecto)//Si es imagen y video se crea carpeta access.
+    index.html - Página de inicio de nuestro proyecto
+
+PALETAS DE COLORES:
+- https://coolors.co/
+- https://colorhunt.co/
+
+LIBRERIAS DE IMAGENES:
+-PIXABAY
+
+LIBRERIAS DE LOGOS:
+- FLATICON
+
+FUENTES MÁS USADAS: REBOTO-MONSERRAT
