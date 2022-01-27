@@ -11,9 +11,13 @@ CHECKEAR EN W3C (https://www.w3.org/) PARA:
 - VALIDATOR (https://validator.w3.org/) PARA VALIDAD WEB OFICIALMENTE EN CUANTO A CODIGO.
 - DUDAS EN GRAL..ETIQUETAS POR EJ (https://www.w3.org/2009/cheatsheet/)
 
+MARKDOWN EDITOR:
+- https://mus-markdown-editor.herokuapp.com/: Visor para crear archivos readme.md 
+
 CAN I USE PARA VER QUE NAVEGADORES Y VERSIONES SOPORTAN LAS HERRAMIENTAS USADAS (EJ. FLEX):
 - https://caniuse.com/
 
+FUNKIFY: extensión de chrome para ayudar a ver las paginas como las verian personas con dificultades visuales.
 Partes princ:
 header-body-footer...header y footer se mantienen en todos los archivos html..el body va variando.
 
