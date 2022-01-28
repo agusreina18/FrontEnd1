@@ -25,9 +25,26 @@ span{
     font-style: italic;
 }
 
+dt{
+    margin-inline-start: 40px; /*Ajusta el comienzo de la linea, margen*/
+    display: block;
+}
+
+dd{
+    margin-inline-start: 80px;
+    padding-left: 40px;
+    padding-bottom: 7px; /*una especie de interlineado de cajas de background*/
+    /*display: block;*/
+}
+
 /*FOOTER*/
 footer{
     background-color: #005677;
     color: #fff;
     text-align: center;
+}
+
+a{
+    color:#FFF;
+    letter-spacing: 10px;
 }
