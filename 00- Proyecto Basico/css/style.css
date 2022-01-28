@@ -1,0 +1,49 @@
+/*CSS*/
+/* Para centrar margin: 0 auto;
+/* Estilos generales */
+
+/* Id-clase-elemento prevalece por ubicacion en CSS*/
+
+h2{ /*No hay jerarquia dentro de la regla, por lo que los 
+    elementos dentro de unas llaves puede ir en orden alfabetico (menos recomendado por flex)
+    o por orden de jerarquia (de lo general a lo más
+    específico)*/
+    color: #2c2b2d; /*color por hexadecimal, primer par es cant de rojo, 
+    segundo par cant de verde y tercer par cant de azul*/
+    background-color: rgba(123, 45, 67, .5);/*el rgba se usa cuando necesito aplicar
+    transparencia (para eso el a, que va de 0 a 1). Los valores de r,g y b varian de 0(negro)
+    a 255(blanco)*/
+    font-size: 25px; /*Revisar el uso de rem (este toma en cuenta las medidas
+    que trae el navegador, por lo gral 16px) y em(toma en cuenta las medidas del padre, más usado
+    porque dejo de depender del navegador), que sirven 
+    para dar tamaño de manera relativa*/
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: .5;/*opacity tamb sirve para dar transparencia
+    con la diferencia de que se aplica a todos los hijos, mientras que
+    el elemento "a" de background color x ej, se aplica solo al fondo*/
+}
+
+.title-imp{ /*Tiene mayor especificidad, por ende mayor prevalencia
+    un elemento id que una clase o selector (este) que uno por nombre 
+    y ubicacionubicacion (h2 x eje). Por regla en el css se pone primero lo 
+    más gral y luego lo más especifico*/
+    color: white;
+}
+
+/*
+h2{
+    La mayor jerarquia
+    color: red !important
+}
+
+/*********Header*********/
+
+/*********Main*********/
+/* Seccion Productos*/
+
+/* Seccion Mision */
+
+/*********Footer*********/

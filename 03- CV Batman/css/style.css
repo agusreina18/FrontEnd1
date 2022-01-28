@@ -1,0 +1,33 @@
+/*HEADER*/
+header{
+    background-color: #E5E5E5;
+    text-align: center;
+}
+h1, h2{
+    background-color: #C4C4C4;
+    color: #005677;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/*MAIN*/
+.container{
+    margin: 40px auto;
+    width: 70%;
+}
+
+span{
+    font-weight: 700;
+}
+
+.personal span{
+    font-style: italic;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #005677;
+    color: #fff;
+    text-align: center;
+}

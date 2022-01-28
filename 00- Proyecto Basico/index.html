@@ -10,8 +10,11 @@ scroll desde el html. Se suele configurar en el css tamb.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Prueba</title>
     <!--Lo unico que va a ver el usuario es esta etiqueta que se vera reflejada en el nombre de la pestaña-->
-    <link rel="stylesheet" href="">
-    <!-- inserto ruta a mi archivo css y misma etiqueta para otros enlaces (fuentes por ej)-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- inserto ruta a mi archivo css y misma etiqueta para otros 
+        enlaces (fuentes por ej). Voy a tener otros css (fontawesome,bootstrap, por ej)
+    pero siempre nuestra hoja de estilo "style.css" va a tener prioridad,
+    por lo que siempre debe ir al final para evitar sobre escritura con otras hojas-->
 </head>
 
 <body>
@@ -59,53 +62,72 @@ scroll desde el html. Se suele configurar en el css tamb.-->
     </header>
     <main>
         <!--Todo el contenido principal, aqui se debe separar en secciones-->
-        <section>
-            <h2>Seccion 1</h2>
-            <article></article>
-            <!--Este puede estar o no. Se refiere a una seccion independiente dentro de una seccion, ej, 
-                noticia en seccion de policiales. Puede cambiar de un dia al otro. Los article pueden tener 
-                su propio h1, es una estructura un poco mas complicada-->
-            <p>Lorem ipsum dolor sit, <span>amet</span> <i>consectetur</i> <em>adipisicing</em>
-                elit. <br> <b>Fugiat</b> <strong>cupiditate</strong> repellendus
-                <!--A simple vista parece que 
-                    i y em, como b y strong generan el mismo efecto, pero lo de i y b son a nivel estetico, 
-                    mientras que em y strong son  anivel semantico, siendo estos más importantes para el 
-                    navegador. br me genera un salto de linea dentro del parrafo sin romper el parrafo, 
-                    no se usa casi. Todos estos fueron sumplatados con el uso de css--> aliquam veritatis dolorum
-                itaque voluptate voluptatibus ad excepturi omnis!</p>
-            <!--Para parrafos de texto-->
-            <span></span>
-            <!--Esta etiqueta cuando quiero aplicar un det estilo de css a ese elemento de texto dentro de un parrafo, ej, quiero cambiar el color
-            de una palabra o frase dentro del parrafo, ahi lo pongo entre span y no me modifica el parrafo-->
-            <div></div>
-            <!--Etiqueta comodin, para mover elementos en bloque o para aplicar 
-                estilos en todo lo que este dentro, ej, si quiero hacer una card. 
-                Se asignan con un id (esto se usa principalmente en js) o class(principalmente usado en css)-->
-        </section>
-        <section>
-            <h2>Seccion 2</h2>
-            <!--ETIQUETAS PARA LISTAS-->
-            <ul>
-                <!--Para listas desordenadas-->
-                <li>elemento 1
+        <!-- Suelen colocarse los section dentro de un div.container 
+            para poder mover y modificar todo en bloque-->
+            <div class="container">
+                <section>
+                    <h2>Seccion 1</h2>
+                    <article></article>
+                    <!--Este puede estar o no. Se refiere a una seccion independiente dentro de una seccion, ej, 
+                        noticia en seccion de policiales. Puede cambiar de un dia al otro. Los article pueden tener 
+                        su propio h1, es una estructura un poco mas complicada-->
+                    <p>Lorem ipsum dolor sit, <span>amet</span> <i>consectetur</i> <em>adipisicing</em>
+                        elit. <br> <b>Fugiat</b> <strong>cupiditate</strong> repellendus
+                        <!--A simple vista parece que 
+                            i y em, como b y strong generan el mismo efecto, pero lo de i y b son a nivel estetico, 
+                            mientras que em y strong son  anivel semantico, siendo estos más importantes para el 
+                            navegador. br me genera un salto de linea dentro del parrafo sin romper el parrafo, 
+                            no se usa casi. Todos estos fueron sumplatados con el uso de css--> aliquam veritatis dolorum
+                        itaque voluptate voluptatibus ad excepturi omnis!</p>
+                    <!--Para parrafos de texto-->
+                    <span>
+                        <!--Esta etiqueta cuando quiero aplicar un det estilo de css a ese elemento de texto dentro de un parrafo, ej, quiero cambiar el color
+                        de una palabra o frase dentro del parrafo, ahi lo pongo entre span y no me modifica el parrafo-->
+                    </span>
+                    
+                    <div>
+                        <!--Etiqueta comodin, para mover elementos en bloque o para aplicar 
+                        estilos en todo lo que este dentro, ej, si quiero hacer una card. 
+                        Se asignan con un id (esto se usa principalmente en js) o class(principalmente usado en css)-->
+                        <h2>Lista de definiciones</h2>
+                        
+                        <dl>
+                            <!--Lista de definiciones anidadas en el div-->
+                            <dt><span>2021:</span>UNC</dt>
+                            <dd>Licenciatura</dd>
+        
+                            <dt><span>2022:</span>UNC</dt>
+                            <dd>Licenciatura2</dd>
+                        </dl>
+                    </div>
+                    
+                </section>
+                <section>
+                    <h2 class="title-imp">Seccion 2</h2>
+                    <!--ETIQUETAS PARA LISTAS-->
                     <ul>
-                        <li>elemento a</li>
-                        <li>elemento b</li>
+                        <!--Para listas desordenadas-->
+                        <li>elemento 1
+                            <ul>
+                                <li>elemento a</li>
+                                <li>elemento b</li>
+                            </ul>
+                        </li>
+                        <li>element0 2</li>
+                        <li>elemento 3</li>
                     </ul>
-                </li>
-                <li>element0 2</li>
-                <li>elemento 3</li>
-            </ul>
-
-            <ol type="A" start="A">
-                <!-- type me dice tipo de ordenador, num, letra
-                 etc, start me dice desde donde comienza-->
-                <!--Para listas ordenadas-->
-                <li>elemento 1</li>
-                <li>element0 2</li>
-                <li>elemento 3</li>
-            </ol>
-        </section>
+        
+                    <ol type="A" start="A">
+                        <!-- type me dice tipo de ordenador, num, letra
+                         etc, start me dice desde donde comienza-->
+                        <!--Para listas ordenadas-->
+                        <li>elemento 1</li>
+                        <li>element0 2</li>
+                        <li>elemento 3</li>
+                    </ol>
+                </section>
+            </div>
+        
         <aside></aside>
         <!--Esta etiqueta se usa para algo secundario, ej, los links que van a un costado. Ya no se usa tanto excepto para blogs-->
     </main>
