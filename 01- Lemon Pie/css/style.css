@@ -1,0 +1,68 @@
+/*ESTILOS GENERALES*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*HEADER*/
+
+
+/*MAIN*/
+h1{
+    color: white;
+    font-weight: 900;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3{
+    font-style: italic;
+}
+
+.hero{
+    /*atajo background
+    backgroun: color url repeat attachment position*/
+    background: wheat url("../img/lemonpie1.png") no-repeat; 
+    /*background-color: wheat;
+    background-image: url("../img/lemonpie1.png");
+    background-repeat: no-repeat;*/
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-position: -40% -30%;*/
+    height: 400px;
+    position: relative;
+}
+
+
+.hero p{
+    color: white;
+}
+.opacidad{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+}
+
+.icono-basket{
+    color: red;
+    margin-right: 10px;
+    font-size: 50px;
+}
+/*FOOTER*/
+
+footer{
+    background-color: #ccc;
+    text-align: center;
+}
