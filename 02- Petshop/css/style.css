@@ -1,5 +1,5 @@
 /*ESTILOS GENERALES*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
@@ -23,6 +23,7 @@ a{
 /*HEADER*/
 header{
     background-color: #F0A83E;
+    height: 82px;
 }
 
 .top{
@@ -45,6 +46,7 @@ header{
 }
 h1{
     color: #000000;
+    font-size: 20px;
     font-weight: 700;
     word-spacing: 5px;
     display: inline-block;
@@ -57,7 +59,8 @@ span{
 
 nav{
     display: inline-block;
-    position: absolute; right: 210px; top: 40px;
+    position: absolute; right: 210px; top: 25px;
+    font-size: 13px;
 }
 
 
@@ -125,4 +128,91 @@ h2{
     color: #000000;
     position: relative; left: -22px;
 }
+
+/*CARDS*/
+.card {
+    background-color: #FBFAF6;
+    color: #3C2313;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    position: relative; left: 110px;
+    width: 265px;
+    height: 312px;
+}
+
+.card a{
+    color: #3C2313;
+}
+.card p{
+    position: relative; bottom: 50px;
+}
+
+.precio{
+    color: #F0A83E;
+}
+
+/*SECCION CONTACTO*/
+.contactanos{
+    height: 400px;
+}
+h3{
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
 /*FOOTER*/
+footer{
+    height: 364px;
+    color: #FFFFFF;
+    background-color: #3C2313;
+    font-weight: 700;
+    
+}
+
+.suscribete{
+    background-color: #F0A83E;
+    height: 60px;
+}
+
+.textsuscrib{
+    font-size: 20px;
+    position: relative; left: 15px; top: -60px;
+}
+
+.info{
+    position: relative;
+}
+
+.info ul{
+    display: inline-block;
+    position: relative; top: -50px;
+}
+.info li{
+    display: block;
+}
+.info dl{
+    display: inline-block;
+    position: relative; top: -65px; left: 5px;
+}
+.info dt{
+    font-size: 20px;
+    margin-top: 35px;
+}
+.info dd{
+    font-size: 10px;
+    margin-inline-start: 0px;
+}
+
+.derechos{
+    background-color: black;
+    font-size: 10px;
+    text-align: center;
+    position: relative; top: -20px;
+}
+
+.derechos p{
+    margin: 0 auto;
+}
