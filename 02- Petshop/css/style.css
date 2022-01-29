@@ -65,7 +65,7 @@ nav{
 section{
 
 }
-
+/* SECCION HERO*/
 .hero{
     background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.svg");
     background-repeat: no-repeat;
@@ -109,5 +109,20 @@ section{
     color:#ffffff;
     position: absolute; top: 165px; left: 890px; bottom: -150px;
     margin: 0 auto;
+}
+
+/*SECCION ARTICULOS*/
+
+.destacados{
+    text-align: center;
+}
+h2{
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 40px;
+}
+.destacados li {
+    color: #000000;
+    position: relative; left: -22px;
 }
 /*FOOTER*/
