@@ -83,7 +83,10 @@ nav> ul{
     width: 330px;
     display: flex;
     justify-content: space-between;
-    flex-basis: content;
+}
+
+nav ul a{
+    padding: 10px 10px;
 }
  
 /*MAIN*/
@@ -95,6 +98,8 @@ nav> ul{
     display: flex;
     margin: 0px;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h2{
@@ -109,14 +114,12 @@ h3{
 .imagen1{
     background-image: url(../img/fondo1.svg);
     background-repeat: no-repeat;
-    background-size: 490px 350px;
-    width: 490px;
+    background-size: 100%;
+    width: 50%;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    margin: 0px;
-    margin-left: 20px;
 }
 
 .imagen1 h2{
@@ -129,7 +132,7 @@ h3{
 }
 
 .imagen2{
-    width: 490px;
+    width: 50%;
     height: 350px;
     background-color: #FFFFFF;
     display: flex;
