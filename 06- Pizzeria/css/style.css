@@ -1,0 +1,189 @@
+/*ESTILOS GENERALES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1024px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    color: #FFFFFF;
+    word-spacing: 10px;
+}
+/*li{
+    display: inline-block;
+}*/
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #222222;
+    width: 1024px;    
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+}
+
+.logo{
+    width: 235px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    margin: 20px;
+}
+
+.logo img{
+    width: 92px;
+    height: 80px;
+    font-weight: 700;
+    order: -1;
+}
+
+h1{
+    width: 132px;
+    height: 28px;
+    font-size: 24px;
+}
+
+h1 a{
+    color:#FC200C;
+}
+
+h1 span{
+    color: #39B24A;
+}
+
+.y {
+    color: white;
+}
+
+nav{
+    margin: 20px;
+    display: flex;
+    width: 330px;
+    height: 19px;
+    font-size: 16px;
+    justify-content: flex-end;
+}
+
+nav> ul{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+/*MAIN*/
+
+.container1{
+    max-width: 1024px;
+    height: 420px;
+    background-color: #E5E5E5;
+    display: flex;
+    margin: 0px;
+    align-items: center;
+}
+
+h2{
+    color: #FC200C;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.imagen1{
+    background-image: url(../img/fondo1.svg);
+    background-repeat: no-repeat;
+    background-size: 490px 350px;
+    width: 490px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.imagen1 h2{
+    width: 490px;
+    text-align: center;
+}
+
+.imagen1 h2 span{
+    color: #F3F3F3;
+}
+
+.imagen2{
+    width: 490px;
+    height: 350px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+.imagen2 h2{
+    height: 28px;
+    width: 385px;
+    text-align: center;
+    
+}
+
+.container2{
+    width: 385px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container2 img{
+    width: 92px;
+    height: 129px;
+    margin: 0px;
+    margin-right: 20px;
+}
+
+.top-pizzas{
+    margin: 0px;
+    width: 173px;
+    height: 178px;
+    font-weight: 700;
+}
+
+.top-pizzas li{
+    width: 173px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #222222;
+}
+
+.logo-final{
+    width: 235px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    margin: 20px;
+}
