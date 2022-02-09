@@ -83,6 +83,7 @@ nav> ul{
     width: 330px;
     display: flex;
     justify-content: space-between;
+    flex-basis: content;
 }
  
 /*MAIN*/
@@ -176,14 +177,44 @@ h3{
 /*FOOTER*/
 
 footer{
+    width: 1024px;
+    height: 150px;
     background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul{
+    width: 98px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
 }
 
 .logo-final{
-    width: 235px;
+    width: 212px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items:center;
-    margin: 20px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.logo-final img{
+    width: 92px;
+    height: 80px;
+    order: -1;
+}
+
+h3 a{
+    color:#FC200C;
+}
+
+h3 span{
+    color: #39B24A;
 }
