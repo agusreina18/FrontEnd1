@@ -4,12 +4,16 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     width: 1024px;
+    box-sizing: border-box;
 }
 
 ul{
     list-style-type: none;
     color: #FFFFFF;
     word-spacing: 10px;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 li{
     display: inline-block;
@@ -20,13 +24,61 @@ a{
     color: white;
 }
 
+
 /*HEADER*/
 header{
     background-color: #F0A83E;
-    height: 82px;
+    display: flex;
+    flex-direction: column;
 }
 
 .top{
+    background-color: #222222;
+    color: #F3F3F3;
+    font-weight: 400;
+    font-size:0.625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px 90px;
+}
+
+.top p, .top ul {
+    margin: 0;
+}
+
+.logo-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+h1{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    word-spacing: 5px;
+    width: 50%;
+    margin: 0px;
+}
+
+span{
+    color: #FFFFFF;
+    
+}
+
+.logo-menu h1, .logo-menu nav{
+    margin: 0px;
+}
+
+.logo-menu nav{
+    width: 50%;
+    font-size: 0.8125rem;
+
+}
+/*.top{
     background-color: #222222;
     color: #F3F3F3;
     font-weight: 400;
@@ -61,20 +113,64 @@ nav{
     display: inline-block;
     position: absolute; right: 210px; top: 25px;
     font-size: 13px;
-}
+}*/
 
 
 /*MAIN*/
-section{
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
 }
 /* SECCION HERO*/
+
 .hero{
+    background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 409px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text-hero{
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.cuadro1{
+    font-size: 1.875rem;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0.625rem;
+    margin: 0px;
+}
+
+.cuadro2{
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0.75rem;
+}
+
+.cuadro3{
+    font-size: 1rem;
+    background-color: #F0A83E;
+    padding: 0.94rem 1.45rem;
+    border-radius: 5px;
+    margin: 0px;
+}
+/*.hero{
     background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    position: relative; top: -16px;
 }
 
 .text-hero{
@@ -116,7 +212,35 @@ section{
 
 /*SECCION ARTICULOS*/
 
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
 .destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+h2{
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0.32rem;
+}
+
+.destacados a {
+    color: #000000;
+}
+
+.destacados li{
+    margin: 15px;
+}
+/*.destacados{
     text-align: center;
 }
 h2{
@@ -130,7 +254,27 @@ h2{
 }
 
 /*CARDS*/
-.card {
+.container{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: #F0A83E;
+    font-size: 1rem;
+}
+
+.card{
+    margin: 10px;
+    text-align: center;
+    background-color: #FBFAF6;
+}
+
+.card a{
+    color: #3C2313;
+}
+
+/*.card {
     background-color: #FBFAF6;
     color: #3C2313;
     display: inline-block;
@@ -154,7 +298,53 @@ h2{
 }
 
 /*SECCION CONTACTO*/
-.contactanos{
+
+h3{
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 1.5625rem;
+    text-align: center;
+}
+
+.datos p{
+    background-color: #3C2313;
+    color: #FFFFFF;
+    font-size: 0.5625rem;
+    font-weight: 400;
+    padding: 1rem;
+    padding-right: 14.375rem;
+    border-radius: 1rem;
+}
+
+.buttoms{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 4.6875rem;
+}
+
+.reset-buttom{
+    color: #FFFFFF;
+    background-color:  #8A8787;
+    padding: 0.5rem 1.5625rem 0.5rem 1.375rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    margin: 0.1875rem;
+}
+
+.send-buttom{
+    color: #FFFFFF;
+    background-color:  #F0A83E;
+    padding: 0.5rem 2.125rem 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    margin: 0.1875rem;
+}
+/*.contactanos{
     height: 400px;
 }
 h3{
@@ -163,9 +353,10 @@ h3{
     font-size: 25px;
     text-align: center;
 }
+
 /*FOOTER*/
 footer{
-    height: 364px;
+    width: 100%;
     color: #FFFFFF;
     background-color: #3C2313;
     font-weight: 700;
@@ -174,14 +365,50 @@ footer{
 
 .suscribete{
     background-color: #F0A83E;
-    height: 60px;
-}
-
-.textsuscrib{
     font-size: 20px;
-    position: relative; left: 15px; top: -60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 3rem;
+    padding-left: 1.875rem;
 }
 
+.suscribete p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+.suscribete>p{
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.susc-form{
+    display: flex;
+    font-size: 9px;
+    font-weight: 400;
+    color: #A0A0A0;
+}
+
+.ingreso{
+    background-color: #F3F3F3;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 9.25rem;
+    margin: 10px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+}
+
+.buttom-subs{
+    padding-right: 0,6875rem;
+    padding-left: 0,6875rem;
+}
+
+
+/*
 .info{
     position: relative;
 }
