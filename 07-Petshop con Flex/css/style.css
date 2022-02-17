@@ -78,42 +78,6 @@ span{
     font-size: 0.8125rem;
 
 }
-/*.top{
-    background-color: #222222;
-    color: #F3F3F3;
-    font-weight: 400;
-    font-size: 10px;
-    height: 20px;
-}
-
-.top p{
-    display: inline-block;
-    position: relative; left: 10px; top:-5px;
-}
-.top ul{
-    background-color: #222222;
-    display: inline-block;
-    word-spacing: 10px;
-    position:absolute; right: 210px; top: -5px;
-}
-h1{
-    color: #000000;
-    font-size: 20px;
-    font-weight: 700;
-    word-spacing: 5px;
-    display: inline-block;
-    position: relative; left: 10px;
-}
-span{
-    color: #FFFFFF;
-    
-}
-
-nav{
-    display: inline-block;
-    position: absolute; right: 210px; top: 25px;
-    font-size: 13px;
-}*/
 
 
 /*MAIN*/
@@ -166,49 +130,7 @@ main{
     border-radius: 5px;
     margin: 0px;
 }
-/*.hero{
-    background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-}
 
-.text-hero{
-    position: relative; right: 100px; top: 100px;
-    font-weight: 400;
-    text-align: center;
-    font-size: 16px;
-}
-
-.cuadro1{
-    background-color: #FFFFFF;
-    font-size: 30px;
-    position: absolute; top: 50px; left: 748px;
-    width: 365px;
-    height: 50px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.cuadro2{
-    position: absolute; top: 100px; left: 740px; right: -100px;
-}
-
-.cuadro3{
-    background-color: #F0A83E;
-    
-    width:140px;
-    height: 50px;
-    position: absolute; top: 150px; left: 868px; bottom: -150px;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-.textoCuadro3{
-    color:#ffffff;
-    position: absolute; top: 165px; left: 890px; bottom: -150px;
-    margin: 0 auto;
-}
 
 /*SECCION ARTICULOS*/
 
@@ -240,18 +162,6 @@ h2{
 .destacados li{
     margin: 15px;
 }
-/*.destacados{
-    text-align: center;
-}
-h2{
-    color: #3C2313;
-    font-weight: 700;
-    font-size: 40px;
-}
-.destacados li {
-    color: #000000;
-    position: relative; left: -22px;
-}
 
 /*CARDS*/
 .container{
@@ -274,28 +184,7 @@ h2{
     color: #3C2313;
 }
 
-/*.card {
-    background-color: #FBFAF6;
-    color: #3C2313;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 500;
-    position: relative; left: 110px;
-    width: 265px;
-    height: 312px;
-}
 
-.card a{
-    color: #3C2313;
-}
-.card p{
-    position: relative; bottom: 50px;
-}
-
-.precio{
-    color: #F0A83E;
-}
 
 /*SECCION CONTACTO*/
 
@@ -344,15 +233,6 @@ h3{
     border-radius: 1rem;
     margin: 0.1875rem;
 }
-/*.contactanos{
-    height: 400px;
-}
-h3{
-    color: #3C2313;
-    font-weight: 700;
-    font-size: 25px;
-    text-align: center;
-}
 
 /*FOOTER*/
 footer{
@@ -368,20 +248,21 @@ footer{
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding-right: 3rem;
     padding-left: 1.875rem;
 }
 
 .suscribete p{
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-start: 0.625rem;
+    margin-block-end: 0.625rem;
 
 }
 
 .suscribete>p{
-    padding-top: 1.25rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
 .susc-form{
@@ -393,60 +274,86 @@ footer{
 
 .ingreso{
     background-color: #F3F3F3;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 9.25rem;
+    padding: 1rem 16.94rem 1rem 0.5rem;
     margin: 10px;
     margin-right: 2.5px;
     margin-left: 2.5px;
+    border-radius: 1rem;
 }
 
 .buttom-subs{
     padding-right: 0,6875rem;
     padding-left: 0,6875rem;
+    background-color: #3C2313;
+    padding: 0.68rem;
+    border-radius: 1rem;
+    margin-left: 0.3rem;
 }
 
-
-/*
 .info{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.69rem 3.75rem 0.69rem 3.75rem;
+    align-items: center;
 }
 
-.info ul{
-    display: inline-block;
-    position: relative; top: -50px;
-}
-.info li{
-    display: block;
-}
-.info dl{
-    display: inline-block;
-    position: relative; top: -65px; left: 5px;
-}
-.info dt{
-    font-size: 20px;
-    margin-top: 35px;
-}
-.info dd{
-    font-size: 10px;
-    margin-inline-start: 0px;
-}
 .info p{
-    color: #000000;
-    font-size: 20px;
+    color: #F0A83E;
+    font-size: 1.25rem;
     font-weight: 700;
     word-spacing: 5px;
-    display: inline-block;
-    position: relative; left: 488px; top: -148px;
+    width: 50%;
+    text-align: end;
 }
+
+.info span{
+    color: #FFFFFF;
+}
+
+.iconos{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.iconos ul{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.iconos>ul>li{
+    padding: 0.69rem;
+}
+
+.iconos dl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block-end: 2rem;
+
+    
+}
+
+.iconos dt{
+    font-size: 20px;
+}
+
+.iconos dd{
+    margin-inline-start: 0;
+    font-weight: 700;
+    font-size: 0.69rem;
+}
+
 .derechos{
-    background-color: black;
-    font-size: 10px;
+    background-color: #000000;
     text-align: center;
-    position: relative; top: -20px;
+    font-size: 0.69rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    
 }
 
 .derechos p{
-    margin: 0 auto;
+    margin: 0;
 }
